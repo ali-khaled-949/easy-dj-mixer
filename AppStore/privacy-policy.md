@@ -80,4 +80,5 @@ If this policy changes, this page will be updated and the date at the top revise
 
 ## Contact
 
-Questions about this policy: solidinnovator@gmail.com
+Easy DJ Mixer is published by New Innovations Enterprise LLC.
+Questions about this policy: info@solidinnovationstudio.com
