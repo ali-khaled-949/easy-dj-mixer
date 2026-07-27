@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Easy DJ Mixer — Support</title>
+<meta name="description" content="Support and help for Easy DJ Mixer, a two-deck DJ mixer for iPhone.">
+<style>
+  :root {
+    --bg: #0d0d0f; --panel: #1c1c21; --stroke: #2a2a31;
+    --text: #f5f5f7; --dim: #a1a1aa;
+    --a: #26c6fa; --b: #ff6b5c; --accent: #ffa81c;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    padding: 0 20px;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 56px 0 80px; }
+  header { display: flex; align-items: center; gap: 16px; margin-bottom: 8px; }
+  .mark { position: relative; width: 56px; height: 56px; flex: none; }
+  .mark i {
+    position: absolute; top: 8px; width: 40px; height: 40px; border-radius: 50%;
+    mix-blend-mode: screen;
+  }
+  .mark i:first-child { left: 0; background: var(--a); }
+  .mark i:last-child  { left: 16px; background: var(--b); }
+  h1 { font-size: 30px; margin: 0; letter-spacing: -0.02em; }
+  .tag { color: var(--dim); margin: 2px 0 0; font-size: 15px; }
+  h2 { font-size: 20px; margin: 40px 0 10px; letter-spacing: -0.01em; }
+  h3 { font-size: 16px; margin: 22px 0 4px; }
+  p, li { color: #d9d9e0; }
+  a { color: var(--a); }
+  .card {
+    background: var(--panel); border: 1px solid var(--stroke);
+    border-radius: 12px; padding: 18px 20px; margin: 18px 0;
+  }
+  .note { border-left: 3px solid var(--accent); }
+  code {
+    background: #26262d; padding: 2px 6px; border-radius: 5px;
+    font-size: 14px; color: var(--accent);
+  }
+  footer {
+    margin-top: 56px; padding-top: 20px; border-top: 1px solid var(--stroke);
+    color: var(--dim); font-size: 14px;
+  }
+  ul { padding-left: 22px; }
+  li { margin: 5px 0; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="mark"><i></i><i></i></div>
+    <div>
+      <h1>Easy DJ Mixer</h1>
+      <p class="tag">Two decks, real scratching, your music.</p>
+    </div>
+  </header>
+
+  <div class="card">
+    <strong>Need help?</strong> Email
+    <a href="mailto:info@solidinnovationstudio.com">info@solidinnovationstudio.com</a>
+    and we'll get back to you.
+  </div>
+
+  <h2>Getting started</h2>
+  <p>Easy DJ Mixer is landscape-only — turn your iPhone sideways after opening it.
+     A short guide appears the first time you launch. You can skip it, and reopen it
+     any time with the <strong>?</strong> button next to the crossfader.</p>
+
+  <h3>Load a track</h3>
+  <p>Tap <strong>+</strong> on either deck to open your library, then tap <strong>A</strong>
+     or <strong>B</strong> next to a song to load it onto that deck. Two demo tracks are
+     included so you can start immediately.</p>
+
+  <h3>Import your own music</h3>
+  <p>In the library, tap the import button and pick files from Files or iCloud Drive.
+     MP3, M4A, WAV and AIFF all work. Imported tracks are copied into the app so they
+     stay available offline.</p>
+
+  <h3>Play, cue and scratch</h3>
+  <ul>
+    <li><strong>CUE</strong> sets your start point. Hold it to preview, release to snap back.</li>
+    <li><strong>Spin the platter</strong> to scratch — your finger's speed is the playback speed. Pull backwards to play in reverse.</li>
+    <li><strong>Drag the waveform</strong> to nudge a track into place, or tap the overview strip to jump.</li>
+  </ul>
+
+  <h3>Mix the two decks</h3>
+  <ul>
+    <li><strong>Crossfader</strong> at the bottom centre blends deck A into deck B.</li>
+    <li><strong>EQ knobs</strong> (HI / MID / LOW) go from full kill to +6 dB.</li>
+    <li><strong>FILTER</strong> is low-pass one way, high-pass the other.</li>
+    <li><strong>PITCH</strong> matches tempos. Tap <code>±8</code> to widen the range to ±16% or ±50%.</li>
+  </ul>
+
+  <h3>Resetting a control</h3>
+  <p>Tap the <strong>↺</strong> arrow beside the A or B label to flatten that deck's EQ and
+     filter instantly. It lights up only when something is off-neutral. To reset a single
+     knob or fader, double-tap it.</p>
+
+  <h2>Common questions</h2>
+
+  <h3>Can I mix songs from Spotify or Apple Music?</h3>
+  <div class="card note">
+    <p style="margin-top:0">No — and no DJ app can, without a licensing partnership with
+       that service. Streaming services do not allow their audio to be decoded and
+       manipulated by third-party apps, which is what mixing requires.</p>
+    <p style="margin-bottom:0">Easy DJ Mixer plays audio files stored on your device: music
+       you've bought, downloaded, or made yourself.</p>
+  </div>
+
+  <h3>Why do I have to sign in?</h3>
+  <p>Sign-in with Apple or Google identifies you so your library stays yours on this
+     device. There is no server behind the app — your account details are stored only in
+     your iPhone's keychain, and your music never leaves your phone. See the
+     <a href="privacy.html">privacy policy</a> for detail.</p>
+
+  <h3>How do I sign out or delete my account?</h3>
+  <p>Tap the person icon next to the CROSSFADER label. <strong>Sign Out</strong> keeps your
+     imported tracks; <strong>Delete Account</strong> removes your account and every track
+     you've imported from the device.</p>
+
+  <h3>Why is the app landscape only?</h3>
+  <p>The layout mirrors real DJ equipment — two decks either side of a centre mixer. That
+     doesn't fit a portrait phone at a usable size.</p>
+
+  <h3>Is the BPM always right?</h3>
+  <p>BPM is estimated automatically when a track is imported. It's accurate for most music
+     with a steady beat, but it's an estimate, not a beat grid — use the pitch fader and
+     your ears to fine-tune.</p>
+
+  <h2>Contact</h2>
+  <p>Questions, bugs or feature requests:
+     <a href="mailto:info@solidinnovationstudio.com">info@solidinnovationstudio.com</a></p>
+
+  <footer>
+    <a href="privacy.html">Privacy Policy</a> · © 2026 Ali Khaled
+  </footer>
+
+</div>
+</body>
+</html>
