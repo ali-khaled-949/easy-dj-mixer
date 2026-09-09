@@ -77,14 +77,13 @@ EASY TO PICK UP
 • A short guide on first launch shows you the six things that matter — or skip it
 • Tap ? any time to see it again
 
-SIGN IN, THEN IT'S YOURS
-Sign in with Apple or Google. That's the only personal detail involved, it stays in your
+PRIVATE BY DESIGN
+Signing in takes one tap and is the only personal detail involved. It stays in your
 device's keychain, and there's no server behind it. No ads, no subscription, no tracking.
 Your music never leaves your phone.
 
-Note: this app plays audio files stored on your device. It cannot play tracks from
-Spotify, Apple Music or other streaming services — those services do not allow their
-audio to be mixed by third-party apps.
+Note: this app mixes audio files stored on your device. It cannot play tracks from
+streaming services, which do not permit their audio to be mixed by third-party apps.
 ```
 
 ## Keywords (100 char max, comma separated, no spaces)
