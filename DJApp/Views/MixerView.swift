@@ -27,30 +27,41 @@ struct MixerView: View {
                         .font(.system(size: 7, weight: .bold))
                         .tracking(0.8)
                         .foregroundStyle(Theme.dim)
-
-                    Button(action: onHelp) {
-                        Image(systemName: "questionmark.circle")
-                            .font(.system(size: 11, weight: .semibold))
-                            .foregroundStyle(Theme.dim)
-                    }
-                    .buttonStyle(.plain)
-                    .accessibilityLabel("How to use")
-
-                    Button(action: onAccount) {
-                        Image(systemName: "person.crop.circle")
-                            .font(.system(size: 11, weight: .semibold))
-                            .foregroundStyle(Theme.dim)
-                    }
-                    .buttonStyle(.plain)
-                    .accessibilityLabel("Account and sign out")
-
                     Spacer()
                     Text("B").font(.system(size: 9, weight: .bold)).foregroundStyle(Theme.deckB)
                 }
             }
+
+            // Labelled, not icon-only: App Review missed an unlabelled account icon here,
+            // and account deletion lives behind it.
+            HStack(spacing: 6) {
+                pill("Help", symbol: "questionmark.circle", action: onHelp)
+                    .accessibilityLabel("How to use")
+                pill("Account", symbol: "person.crop.circle", action: onAccount)
+                    .accessibilityLabel("Account, sign out and delete account")
+            }
         }
         .padding(8)
         .panelBackground()
+    }
+
+    private func pill(_ title: String, symbol: String, action: @escaping () -> Void) -> some View {
+        Button(action: action) {
+            HStack(spacing: 4) {
+                Image(systemName: symbol)
+                    .font(.system(size: 11, weight: .semibold))
+                Text(title)
+                    .font(.system(size: 11, weight: .semibold))
+            }
+            .foregroundStyle(Theme.text)
+            .frame(maxWidth: .infinity)
+            .frame(height: 24)
+            .background(
+                RoundedRectangle(cornerRadius: 6, style: .continuous)
+                    .fill(Theme.panelHigh)
+            )
+        }
+        .buttonStyle(.plain)
     }
 }
 

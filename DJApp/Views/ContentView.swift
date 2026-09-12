@@ -12,15 +12,15 @@ struct ContentView: View {
 
     var body: some View {
         Group {
-            if auth.isSignedIn {
+            if auth.hasAccess {
                 console
             } else {
                 LoginView(auth: auth)
             }
         }
         // The console stops when signed out so nothing keeps playing behind the gate.
-        .onChange(of: auth.isSignedIn) { _, signedIn in
-            if !signedIn {
+        .onChange(of: auth.hasAccess) { _, hasAccess in
+            if !hasAccess {
                 engine.stop()
                 engine.decks.forEach { $0.eject() }
             }

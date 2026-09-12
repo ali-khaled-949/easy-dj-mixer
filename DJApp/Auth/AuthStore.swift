@@ -43,6 +43,13 @@ final class AuthStore: ObservableObject {
 
     var isSignedIn: Bool { session != nil }
 
+    /// Signing in is optional. Someone who chooses "Continue without an account" gets the
+    /// full app; nothing is created for them, so there is nothing to delete later.
+    @Published private(set) var isGuest: Bool = UserDefaults.standard.bool(forKey: "continuesAsGuest")
+
+    /// Whether the console should be shown at all.
+    var hasAccess: Bool { isSignedIn || isGuest }
+
     init() {
         session = loadSession()
     }
@@ -110,9 +117,24 @@ final class AuthStore: ObservableObject {
 
     // MARK: - Session lifecycle
 
+    func continueAsGuest() {
+        setGuest(true)
+    }
+
+    /// Takes a guest back to the sign-in screen.
+    func leaveGuestMode() {
+        setGuest(false)
+    }
+
     func signOut() {
         session = nil
         deleteFromKeychain()
+        setGuest(false)
+    }
+
+    private func setGuest(_ value: Bool) {
+        isGuest = value
+        UserDefaults.standard.set(value, forKey: "continuesAsGuest")
     }
 
     /// Required by App Store guideline 5.1.1(v): an app that lets people create an
@@ -137,6 +159,7 @@ final class AuthStore: ObservableObject {
 
     private func store(_ newSession: UserSession) {
         session = newSession
+        setGuest(false)
         errorMessage = nil
         saveToKeychain(newSession)
     }

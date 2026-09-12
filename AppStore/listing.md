@@ -106,32 +106,32 @@ First release.
 
 ## App Review Information
 
-**Sign-in required:** Yes, but no demo account is needed.
-
-The app offers Sign in with Apple and Sign in with Google. The reviewer can sign in with
-any Apple ID — including a private-relay email — and reach the full app. There is no
-server, no allowlist, and no approval step, so any account works immediately.
+**Sign-in required:** No. Sign-in is optional — "Continue without an account" opens the
+full app. To test account features, use Sign in with Apple with any Apple ID; no demo
+account is needed.
 
 **Notes for the reviewer:**
 
 ```
-Sign in with Apple or Google is required. No demo account is needed — any Apple ID
-works, and there is no server or approval step behind it.
+SIGN-IN IS OPTIONAL
+Tap "Continue without an account" on the first screen to use the full app with no
+account. To test accounts, use Sign in with Apple — any Apple ID works, and no demo
+account is needed.
 
-A guide appears on first launch explaining the controls; it can be skipped, and
-reopened any time with the ? button next to the crossfader.
+ACCOUNT DELETION (Guideline 5.1.1(v))
+1. Tap "Sign in with Apple" and sign in.
+2. Tap "Start Mixing" to close the first-launch guide.
+3. Tap the "Account" button at the bottom of the centre mixer, below the crossfader.
+4. Tap "Delete Account" — the first option, shown in red.
+5. Confirm by tapping "Delete Account" again.
+The account and every imported track are deleted from the device, and the app returns
+to the sign-in screen. A screen recording of this flow on a physical device is attached.
 
-Two demo tracks ("Neon Drive" and "Midnight Cassette") are generated automatically on
-first launch, so both decks can be tested immediately without importing anything.
+TESTING THE MIXER
+Two demo tracks are generated on first launch. Tap + on either deck, tap A or B next to
+a track to load it, then press play. Drag the platter to scratch.
 
-To test: tap the + button on either deck to open the library, tap A or B next to a
-track to load it, then press play. Drag the platter to scratch. Tap the reset arrow next
-to A or B to flatten that deck's EQ, or double-tap a single knob to reset just that one.
-
-Sign out and account deletion are both in the Account menu — the person icon next to the
-crossfader label.
-
-The app is landscape-only by design, matching the layout of physical DJ equipment.
+The app is iPhone-only and landscape-only by design.
 ```
 
 ## App Privacy (Data Collection)

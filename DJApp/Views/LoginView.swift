@@ -44,7 +44,7 @@ struct LoginView: View {
                     .foregroundStyle(Theme.dim)
             }
 
-            Text("Sign in to continue.")
+            Text("Sign in to save an account, or skip it — the whole app works either way.")
                 .font(.system(size: 11))
                 .foregroundStyle(Theme.dim.opacity(0.8))
                 .padding(.top, 2)
@@ -78,6 +78,20 @@ struct LoginView: View {
                     RoundedRectangle(cornerRadius: 9, style: .continuous)
                         .fill(.white)
                 )
+            }
+            .buttonStyle(.plain)
+
+            Button {
+                auth.continueAsGuest()
+            } label: {
+                Text("Continue without an account")
+                    .font(.system(size: 14, weight: .semibold))
+                    .foregroundStyle(Theme.text)
+                    .frame(width: 268, height: 40)
+                    .background(
+                        RoundedRectangle(cornerRadius: 9, style: .continuous)
+                            .stroke(Theme.stroke.opacity(3), lineWidth: 1)
+                    )
             }
             .buttonStyle(.plain)
 
