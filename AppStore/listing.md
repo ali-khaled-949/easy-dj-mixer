@@ -136,7 +136,7 @@ The app is iPhone-only and landscape-only by design.
 
 ## App Privacy (Data Collection)
 
-The app now requires sign-in, so answer **Yes** and declare exactly this:
+Sign-in is optional, but users who sign in share this data, so answer **Yes** and declare exactly this:
 
 | Data type | Used for | Linked to user | Tracking |
 | --- | --- | --- | --- |

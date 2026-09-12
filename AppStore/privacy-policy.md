@@ -4,7 +4,7 @@
 
 ## The short version
 
-Easy DJ Mixer asks you to sign in with Apple or Google so the app knows who you are.
+Signing in is optional. If you choose to sign in with Apple or Google, the app learns who you are.
 That is the only personal information involved, it is stored on your own device, and it
 is never sent to us — we operate no servers. Your music never leaves your iPhone.
 
@@ -53,7 +53,7 @@ detection — happens entirely on your device, offline.
 
 ## Signing out and deleting your account
 
-- **Sign Out** (Account menu, the person icon next to the crossfader) removes your
+- **Sign Out** (the Account button at the bottom of the centre mixer) removes your
   session from the device. Your imported tracks stay.
 - **Delete Account** (same menu) removes your session *and* permanently deletes every
   track you have imported. Because your account exists only on your device, this
